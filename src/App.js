@@ -8,7 +8,12 @@ export default function App() {
 
   const handleNoClick = () => {
     setNoCount(noCount + 1);
+    picture();
   };
+
+function picture(){
+  
+}
 
   const getNoButtonText = () => {
     const phrases = [
@@ -37,12 +42,12 @@ export default function App() {
     <div className="flex flex-col items-center justify-center h-screen -mt-16">
       {yesPressed ? (
         <>
-        <img src="https://media.tenor.com/gUiu1zyxfzYAAAAi/bear-kiss-bear-kisses.gif" alt="" />
-        <div className="text-4xl font-bold my-4">Ok yay!!!</div>
+        <img src="https://i.pinimg.com/originals/17/01/a4/1701a4c22ab0816b459f08f3a3c76170.gif" alt="" />
+        <div className="text-4xl font-bold my-4">OK WOOO!!!</div>
         </>
       ) : (
         <>
-          <img className="h-[200px]" src="https://gifdb.com/images/high/cute-love-bear-roses-ou7zho5oosxnpo6k.gif" alt="" />
+          <img className="h-[200px]" id="pic" src="https://gifdb.com/images/high/cute-love-bear-roses-ou7zho5oosxnpo6k.gif" alt="" />
           <h1 className="text-4xl my-4">Will you be my Valentine?</h1>
           <div>
             <button
