@@ -22,9 +22,9 @@ export default function App() {
       "Really sure?",
       "Think again!",
       "Last chance!",
-      "Surely not?",
+      "I mean it!",
       "You might regret this!",
-      "Give it another thought!",
+      "Give it one more thought!",
       "Are you absolutely certain?",
       "This could be a mistake!",
       "Have a heart!",
@@ -32,7 +32,9 @@ export default function App() {
       "Change of heart?",
       "Wouldn't you reconsider?",
       "Is that your final answer?",
-      "You're breaking my heart ;(",
+      "You're breaking my heart :'(",
+      "</3 ... There goes one piece",
+      "And another ... </3"
     ];
 
     return phrases[Math.min(noCount, phrases.length - 1)];
