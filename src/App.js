@@ -6,14 +6,14 @@ export default function App() {
   const [yesPressed, setYesPressed] = useState(false);
   const yesButtonSize = noCount * 20 + 16;
 
+  function picture(){
+    document.getElementById('pic').src = "https://media.tenor.com/dNLReRVOU4sAAAAi/mochi-mochi-peach-cat-crying.gif";
+  }
+
   const handleNoClick = () => {
     setNoCount(noCount + 1);
     picture();
   };
-
-function picture(){
-  
-}
 
   const getNoButtonText = () => {
     const phrases = [
@@ -47,7 +47,7 @@ function picture(){
         </>
       ) : (
         <>
-          <img className="h-[200px]" id="pic" src="https://gifdb.com/images/high/cute-love-bear-roses-ou7zho5oosxnpo6k.gif" alt="" />
+          <img className="h-[200px]" id="pic" src="https://media.tenor.com/J6xumGwaxh8AAAAj/flowers-flower.gif" alt="" />
           <h1 className="text-4xl my-4">Will you be my Valentine?</h1>
           <div>
             <button
